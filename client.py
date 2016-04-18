@@ -1,4 +1,5 @@
-#!python
+# client.py
+# conding=utf-8
 import httplib
 import traceback
 import urllib
@@ -30,7 +31,8 @@ class Client(object):
                 result = response.read()
 
             if path.find('.csv?') == -1:
-                result = result.decode('utf-8').encode('GB18030')
+                # result = result.decode('utf-8').encode('GB18030')
+                result = result.decode('utf-8')
             return response.status, result
         except Exception as e:
             raise e

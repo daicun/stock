@@ -1,5 +1,8 @@
-#!python
+# stock
+# coding=utf-8
+
 import sys
+
 from client import Client
 
 sBasicInfo = ''
