@@ -14,7 +14,7 @@ class Stock(object):
     #
     sHTTPSConnection = None
     #
-    sToken = 'ea592e5497bd5f6d96318190296ea6b0962602a19195e839695751dd7f2addda'
+    sToken = ''
 
     def __init__(self):
         self.sHTTPSConnection = httplib.HTTPSConnection(self.sHost, self.sPort)
